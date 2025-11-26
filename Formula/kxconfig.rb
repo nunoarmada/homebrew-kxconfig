@@ -7,8 +7,8 @@
 class Kxconfig < Formula
   desc "Bash tools to manage multiple Kubernetes kubeconfigs organized by project"
   homepage "https://github.com/nunoarmada/kxconfig"
-  url "https://github.com/nunoarmada/kxconfig/archive/refs/tags/v1.0.0.tar.gz"
-  sha256 "" # Update this after creating the first release
+  url "https://github.com/nunoarmada/kxconfig/archive/refs/tags/v1.3.0.tar.gz"
+  sha256 "d5558cd419c8d46bdc958064cb97f963d1ea793866414c025906ec15033512ed" # Update this after creating the first release
   license "MIT"
   head "https://github.com/nunoarmada/kxconfig.git", branch: "main"
 
@@ -31,4 +31,3 @@ class Kxconfig < Formula
     assert_match "Usage:", shell_output("#{bin}/kxswap --help", 1)
   end
 end
-
