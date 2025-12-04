@@ -7,8 +7,8 @@
 class Kxconfig < Formula
   desc "Bash tools to manage multiple Kubernetes kubeconfigs organized by project"
   homepage "https://github.com/nunoarmada/kxconfig"
-  url "https://github.com/nunoarmada/kxconfig/archive/refs/tags/kxconfig-v1.5.1.tar.gz"
-  sha256 "1e6f65d3559c111811c31f3e74562f30b80bea2d8a07efe30b42a4c79f6c3dcd"
+  url "https://github.com/nunoarmada/kxconfig/archive/refs/tags/kxconfig-v1.6.0.tar.gz"
+  sha256 "c9b290dfb434df2f5ba9a6284ee2e725f0765d82fea432cbbf8ebe63218916cb"
   license "MIT"
   head "https://github.com/nunoarmada/kxconfig.git", branch: "main"
 
