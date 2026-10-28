@@ -5,13 +5,13 @@
 class Kxconfig < Formula
   desc "Switch between kubeconfig projects from a terminal UI or the command line"
   homepage "https://github.com/nunoarmada/kxconfig"
-  version "2.0.0"
+  version "2.0.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/nunoarmada/kxconfig/releases/download/v2.0.0/kx_2.0.0_darwin_amd64.tar.gz"
-      sha256 "a673105bc0b1a078bd2e6e6cd59a6c9150f9ff81b26c600ea30afe70b58179fd"
+      url "https://github.com/nunoarmada/kxconfig/releases/download/v2.0.1/kx_2.0.1_darwin_amd64.tar.gz"
+      sha256 "68243d21f8b229a0d7c97fea327d0404d715a1bb0dec60cbd2460c0454d7d6fe"
 
       define_method(:install) do
         bin.install "kx"
@@ -21,8 +21,8 @@ class Kxconfig < Formula
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/nunoarmada/kxconfig/releases/download/v2.0.0/kx_2.0.0_darwin_arm64.tar.gz"
-      sha256 "47bd6c245a5c461cc628378b0e51f91836fd83c1e6d79c8b8a5b6824c2f73fbf"
+      url "https://github.com/nunoarmada/kxconfig/releases/download/v2.0.1/kx_2.0.1_darwin_arm64.tar.gz"
+      sha256 "01d8a522d460b00c9c07a6261d92abac9796137eb781b10660e5fc2123c11011"
 
       define_method(:install) do
         bin.install "kx"
@@ -35,8 +35,8 @@ class Kxconfig < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/nunoarmada/kxconfig/releases/download/v2.0.0/kx_2.0.0_linux_amd64.tar.gz"
-      sha256 "ed864f512f8bf07f9875b4ffaf4ab992820d9c95a73d8b5a5be00aca3bfc4e1d"
+      url "https://github.com/nunoarmada/kxconfig/releases/download/v2.0.1/kx_2.0.1_linux_amd64.tar.gz"
+      sha256 "d563b0938a2c5c88513d032aa4efb4d7a640f2ee8f95430242c23e6be077488f"
       define_method(:install) do
         bin.install "kx"
         bash_completion.install "completions/kx.bash" => "kx"
@@ -45,8 +45,8 @@ class Kxconfig < Formula
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/nunoarmada/kxconfig/releases/download/v2.0.0/kx_2.0.0_linux_arm64.tar.gz"
-      sha256 "f878d73c31c035588bb61f49120eb005791d5f0e95cf448e512fb64c0ed736d2"
+      url "https://github.com/nunoarmada/kxconfig/releases/download/v2.0.1/kx_2.0.1_linux_arm64.tar.gz"
+      sha256 "8b2c02069d9fa4dbdb6d3e43e7e7ec10b5a4ab7864755a391fa09657f8687ced"
       define_method(:install) do
         bin.install "kx"
         bash_completion.install "completions/kx.bash" => "kx"
